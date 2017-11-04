@@ -7,22 +7,19 @@
     <meta charset="utf-8">
     <title>Pico Pi App</title>
   </head>
+  <body>
         <canvas id="myCanvas"></canvas>
+  </body>
         <script>
-          function writeMessage(canvas, message) {
-            var context = canvas.getContext('2d');
-            context.clearRect(0, 0, canvas.width, canvas.height);
-            context.font = '10pt Calibri';
-            context.fillStyle = 'black';
-            context.fillText(message, 10, 25);
-          }
-          function drawPainPoint(x, y) {
-            var context = canvas.getContext('2d');
-            context.beginPath();
-            context.moveTo(x,y);
-            context.fillStyle="#FF0000";
-            context.arc(2, 1, 1, 0, 2 * Math.PI, true);
-            context.fill();
+           var canvas = document.getElementById('myCanvas');
+
+          function drawCoordinates(x,y){
+              var pointSize = 50; // Change according to the size of the point.
+              var ctx = canvas.getContext('2d');
+              ctx.fillStyle = "#ff2626"; // Red color
+              ctx.beginPath(); //Start path
+              ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
+              ctx.fill(); // Close the path and fill.
           }
           function getMousePos(canvas, evt) {
             var rect = canvas.getBoundingClientRect();
@@ -31,20 +28,15 @@
               y: evt.clientY - rect.top
             };
           }
-          var canvas = document.getElementById('myCanvas');
-          var context = canvas.getContext('2d');
-    
-          canvas.addEventListener('mousemove', function(evt) {
-            var mousePos = getMousePos(canvas, evt);
-            //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-            //writeMessage(canvas, message);
-          }, false);
 
           canvas.addEventListener('click', function(evt) {
             var mousePos = getMousePos(canvas, evt);
-            //var message = 'Mouse CLICK: ' + mousePos.x + ',' + mousePos.y;
-            writeMessage(canvas, message);
-            drawPainPoint(mousePos.x, mousePos.y);
+
+              $(document).ready(function(){
+                  $(document).click(function(){
+                      $('body').css("background-image", "url(assets/img/body3.png)");
+                  });
+              });
           }, false);
         </script>
   </body>

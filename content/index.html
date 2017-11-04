@@ -1,60 +1,71 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="assets/style.css">
+<head>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
     <meta charset="utf-8">
     <title>Pico Pi App</title>
-  </head>
+</head>
 
-        <div class="header clearfix">
-          <nav>
-            <ul class="nav nav-pills float-right">
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="reportAbuse();">Report Abuse</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" onclick="helpAlert();">Help!</a>
-              </li>
-            </ul>
-          </nav>
-          <h3 class="text-muted">Pico Pen pal</h3>
-        </div>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Pico-Pal</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="reportAbuse();" data-toggle="modal" data-target="#successModal">Report Abuse</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="helpAlert();" data-toggle="modal" data-target="#successModal">Help!</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-  <div class="container-holder">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="gray-box">
-                            <a href="text_view" class="btn btn-info" role="button">Literate</a>
+<p></p>
+
+<div class="container-holder">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" >
+                    <img class="card-img-top" src="assets/temp.png" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="body_view.html" class="card-title">Explore</a>
+                        <p class="card-text">Find out about how your body works.</p>
                     </div>
                 </div>
-                <div class="col">
-                        <a href="body_view" class="btn btn-info" role="button">Illiterate</a>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img class="card-img-top" src="assets/temp.png" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="chat.html" class="card-title">Chat To A Peer</a>
+                        <p class="card-text">Speak to a friendly girl near you.</p>
+                    </div>
                 </div>
-                <div class="col">
-                        <a href="qa" class="btn btn-info" role="button">Answers</a>
+
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="assets/temp.png" alt="Card image cap">
+                    <div class="card-block">
+                        <a href="text_view.html" class="card-title">Chat to a Professional</a>
+                        <p class="card-text">Speak anonamously to a trained professional.</p>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- &nbsp;
-            &nbsp;
-            &nbsp;
-
-            <div class="row">
-                    <video width="320" height="240" controls>
-                            <source src="assets/SexEdVideo.mp4" type="video/mp4">
-                    </video>
-            </div> -->
         </div>
+
     </div>
+</div>
 
-
-
-  <i class="fa fa-bell-o" aria-hidden="true"></i>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="scripts/main.js"></script>
   </body>
-</html
+</html>
+
