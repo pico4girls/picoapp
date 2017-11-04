@@ -13,19 +13,6 @@ function sendTextData() {
     });
   }
 
-//   function sendImageData() {
-//     console.log("Send image data.")
-//     var endpoint = '/local_msgs_sending';
-//     $.ajax({ 
-//         type: "POST",
-//         url: endpoint,
-//         data: "...",
-//         success: function () {
-//             alert('Posted data');
-//         }
-//     });
-//   }
-
   function reportAbuse() {
     console.log("reportAbuse")
     var endpoint = '/local_reportabuse';
@@ -53,22 +40,46 @@ function sendTextData() {
   }
 
   //get messages from API
-  jQuery.ajax({
-    url: "/local_msgs_received",
-    type: "GET",
-    contentType: 'application/json; charset=utf-8'
-  }).done(function(data){  
+function getPeerMessages() {
+    jQuery.ajax({
+        url: "/local_peermsgs_received",
+        type: "GET",
+        contentType: 'application/json; charset=utf-8'
+    }).done(function (data) {
 
-    $.getJSON("example.json", function(json) {
-        console.log(json);
-        data = JSON.parse(json);
-    });
+        $.getJSON("example.json", function (json) {
+            console.log(json);
+            data = JSON.parse(json);
+        });
 
-    var $newsList = $('#AnswersList > ul');
-    $.each(data, function(i, item) {
-        $('<li>')
-            .append($('<div>').html(item.date))
-            .append($('<p>').html(item.value))
-            .appendTo($newsList);
+        var $newsList = $('#AnswersList > ul');
+        $.each(data, function (i, item) {
+            $('<li>')
+                .append($('<div>').html(item.date))
+                .append($('<p>').html(item.value))
+                .appendTo($newsList);
+        });
     });
-  });
+}
+
+function getProfessionalMessages() {
+    jQuery.ajax({
+        url: "/local_msgs_received",
+        type: "GET",
+        contentType: 'application/json; charset=utf-8'
+    }).done(function (data) {
+
+        $.getJSON("example.json", function (json) {
+            console.log(json);
+            data = JSON.parse(json);
+        });
+
+        var $newsList = $('#AnswersList > ul');
+        $.each(data, function (i, item) {
+            $('<li>')
+                .append($('<div>').html(item.date))
+                .append($('<p>').html(item.value))
+                .appendTo($newsList);
+        });
+    });
+}
