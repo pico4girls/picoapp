@@ -152,6 +152,17 @@ def text_view():
     else:
         return send_from_directory('content', 'text_view.html')
     
+@app.route('/chat')
+def chat():
+    with open('data.json', 'r') as fp:
+        data = json.load(fp)
+    if data['logged_user'] == '':
+        #No one logged in - generic page
+        return send_from_directory('content', 'generic.html')    
+    else:
+        return send_from_directory('content', 'chat.html')
+    
+
 @app.route('/assets/<path:path>')
 def send_assets(path):
     return send_from_directory('content/assets', path)
