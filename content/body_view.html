@@ -11,33 +11,11 @@
         <canvas id="myCanvas"></canvas>
   </body>
         <script>
-           var canvas = document.getElementById('myCanvas');
-
-          function drawCoordinates(x,y){
-              var pointSize = 50; // Change according to the size of the point.
-              var ctx = canvas.getContext('2d');
-              ctx.fillStyle = "#ff2626"; // Red color
-              ctx.beginPath(); //Start path
-              ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
-              ctx.fill(); // Close the path and fill.
-          }
-          function getMousePos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            return {
-              x: evt.clientX - rect.left,
-              y: evt.clientY - rect.top
-            };
-          }
-
-          canvas.addEventListener('click', function(evt) {
-            var mousePos = getMousePos(canvas, evt);
-
-              $(document).ready(function(){
-                  $(document).click(function(){
-                      $('body').css("background-image", "url(assets/img/period2.png)");
+              $(document).ready(function() {
+                  $(document).click(function () {
+                      $('body').css("background-image", "url(assets/img/body_new3.png)");
                   });
               });
-          }, false);
         </script>
   </body>
   <script src="assets/jquery.min.js"></script>
