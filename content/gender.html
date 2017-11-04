@@ -66,9 +66,15 @@
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    var count=0;
       $(document).ready(function(){
         $(document).click(function(){
-          $('body').css("background-image", "url(assets/img/female_ages.png)");
+          if(count==0){
+            $('body').css("background-image", "url(assets/img/female_ages.png)");
+            count++;
+          } else {
+            window.location.replace("main.html");
+          }
         });
       });
 
