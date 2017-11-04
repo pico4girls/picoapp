@@ -9,70 +9,89 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <script src="assets/jquery.min.js"></script>
     
     <meta charset="utf-8">
     <title>Pico Pi App</title>
     <style>
-            body {
-                    background-color: #E3F8FF;
-                }
                 </style>
   </head>
   <body>
         <div class="container">
+        <div class="row">
 		   <div class="col-md-8 col-md-offset-3" id="chatArea">
-		        <div class="row">
 		        		<script>
-			        		var endpoint = '/local_msgs_sending';
-			        		/*$.ajax({ 
-			        		    type: "POST",
-			        		    url: endpoint,
-			        		    data: $('#myForm').serializeArray(),
-			        		    success: function () {
-			        		        alert('Posted question');
-			        		    }
-			        		}).done(function() {
-			        			
-			        		});
-			        		*/
-			        		var off = true;
+		        		var endpoint = 'https://roksonne.com/api/messages';
+		        		$.ajax({ 
+		        		    type: "GET",
+		        		    url: endpoint
+		        		}).done(function(data) {
+		        			console.log(data);
+		        			var off = true;
 			        		var html = '';
 		        		    for (var i = 0; i <=3; i++) {
 		        		    		html+='<div class="row">';
 		        		    		if (off == true){
 		        		    			html+='<div class="col-md-8" id="chatArea">';
-		        		    			html+='<div class="panel panel-default">'
-			        	            	html+='<div class="panel-heading""><i class="icon-home">You</i>';
+		        		    			html+='<div class="panel panel-default">';
+			        	            	html+='<div class="panel-heading""><i class="icon-home">   You</i>';
 			        	            html+='</div>';
 			        	            html+='<div class="panel-body">';
-			        		    		html+='<p>Some text here '+i+'</p>';
+			        		    		html+='<p>'+data[i]['body']+'</p>';
 			        		    		html+='</div>';
 			        		    		html+='</div>';
 			        		    		html+='</div>';
-		        		    			var off = false;
+		        		    			off = false;
 		        		    		} else {
 		        		    			html+='<div class="col-md-8	 col-md-offset-1" id="chatArea">';
-		        		    			html+='<div class="panel panel-default">'
-			        	            	html+='<div class="panel-heading""><i class="icon-user">Sarah</i>';
+		        		    			html+='<div class="panel panel-default">';
+			        	            	html+='<div class="panel-heading""><i class="icon-user">   Sarah</i>';
 			        	            	html+='</div>';
 			        	            	html+='<div class="panel-body">';
-			        		    		html+='<p>Some text here '+i+'</p>';
+			        	            	html+='<p>'+data[i]['body']+'</p>';
 			        		    		html+='</div>';
 			        		    		html+='</div>';
 			        		    		html+='</div>';
-		        		    			var off = true;
-		        		    		}
+		        		    			off = true;
+		        		    		};
 		        	            
 		        		    		html+='</div>';
 			        		};
-			        		console.log(html);
 			        		$('#chatArea').html(html);
+		        		});
 		        		</script>
-		        </div>
+		        	</div>
+		        	</div>
+		        <div class="row">
+		        		<div class="col-md-8 col-md-offset-2" id="chatArea">
+		        		<hr></hr>
+		        			<h4>New Message</h4>
+			        		<textarea class="form-control" rows="4" id="textmsg">Write a message</textarea>
+		        			<button type="submit" class="btn btn-default" onclick="sendMsg()">Send</button>
+		        		</div>
+		        	</div>
 	        </div>
         </div>
+        <script>
+        function sendMsg(){
+        		console.log($("#chatArea").val());
+        		var endpoint = 'https://roksonne.com/api/messages';
+        		//var formData = new FormData();
+        		var myObj = {rfid_tag: '88UUIIOOPP00', body: $("#chatArea").val()};
+        		//formData.append("rfid_tag", "88UUIIOOPP00");
+        		//formData.append("body", $("#chatArea").val());
+        		$.ajax({ 
+                type: "POST",
+                url: endpoint,
+                data: myObj,
+                crossDomain: true,
+                success: function () {
+                    alert('Posted question');
+                }
+            });
+        }
+        </script>
   </body>
   </html>
