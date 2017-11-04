@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14cd58e7-bec0-4898-b021-a3d01a73bd4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/body_view.css" afterPath="$PROJECT_DIR$/content/assets/body_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/style.css" afterPath="$PROJECT_DIR$/content/assets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/body_view.html" afterPath="$PROJECT_DIR$/content/body_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/chat.html" afterPath="$PROJECT_DIR$/content/chat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/education.html" afterPath="$PROJECT_DIR$/content/education.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/img/female_ages.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/img/male_ages.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/img/male_female.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/age.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/bootstrap4/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/bootstrap4/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/css/the-big-picture.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/assets/js/jquery-3.2.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/picture.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/index.html" afterPath="$PROJECT_DIR$/content/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/text_view.html" afterPath="$PROJECT_DIR$/content/text_view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="309">
+              <caret line="67" column="2" lean-forward="false" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="age.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/age.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -34,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/content/education.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body_view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="body_view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/body_view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
@@ -127,10 +139,10 @@
         <option value="$PROJECT_DIR$/content/education.html" />
         <option value="$PROJECT_DIR$/content/assets/body_view.css" />
         <option value="$PROJECT_DIR$/content/assets/style.css" />
-        <option value="$PROJECT_DIR$/content/index.html" />
         <option value="$PROJECT_DIR$/content/chat.html" />
         <option value="$PROJECT_DIR$/content/text_view.html" />
         <option value="$PROJECT_DIR$/content/body_view.html" />
+        <option value="$PROJECT_DIR$/content/index.html" />
       </list>
     </option>
   </component>
@@ -307,12 +319,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509818194558</updated>
-      <workItem from="1509818196399" duration="3478000" />
+      <workItem from="1509818196399" duration="3699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3478000" />
+    <option name="totallyTimeSpent" value="3699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -397,14 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/chat.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -424,7 +428,7 @@
     <entry file="file://$PROJECT_DIR$/content/education.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -454,6 +458,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/age.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="67" column="2" lean-forward="false" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
           <folding />
         </state>
       </provider>
