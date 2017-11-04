@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14cd58e7-bec0-4898-b021-a3d01a73bd4b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/assets/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/assets/body.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content/assets/body1.png" afterPath="$PROJECT_DIR$/content/assets/img/body1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/content/assets/body3.png" afterPath="$PROJECT_DIR$/content/assets/img/body3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/age.html" afterPath="$PROJECT_DIR$/content/age.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/assets/body_view.css" afterPath="$PROJECT_DIR$/content/assets/body_view.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/body_view.html" afterPath="$PROJECT_DIR$/content/body_view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,21 +84,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body_view.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="body_view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/body_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="36" column="77" lean-forward="false" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
+            <state relative-caret-position="264">
+              <caret line="36" column="79" lean-forward="false" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body_view.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="body_view.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/assets/body_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="39" />
+            <state relative-caret-position="45">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -323,12 +317,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509818194558</updated>
-      <workItem from="1509818196399" duration="4168000" />
+      <workItem from="1509818196399" duration="4958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4168000" />
+    <option name="totallyTimeSpent" value="4958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -473,18 +467,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/body_view.html">
+    <entry file="file://$PROJECT_DIR$/content/assets/body_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="36" column="77" lean-forward="false" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
+        <state relative-caret-position="45">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/assets/body_view.css">
+    <entry file="file://$PROJECT_DIR$/content/body_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="39" />
+        <state relative-caret-position="264">
+          <caret line="36" column="79" lean-forward="false" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
           <folding />
         </state>
       </provider>
